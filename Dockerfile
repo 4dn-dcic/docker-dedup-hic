@@ -4,7 +4,7 @@ FROM ubuntu:16.04
 MAINTAINER Soo Lee (duplexa@gmail.com)
 
 # 1. general updates & installing necessary Linux components
-RUN apt-get update -y && apt-get install -y wget unzip less vim bzip2 make gcc zlib1g-dev libncurses-dev git java-1.8.0
+RUN apt-get update -y && apt-get install -y wget unzip less vim bzip2 make gcc zlib1g-dev libncurses-dev git openjdk-8-jdk
 
 # download tools
 WORKDIR /usr/local/bin
